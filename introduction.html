@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>POKEDEX</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Monospace, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Style the header */
+#features {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 20px;
+}
+
+.feature {
+  margin: 0 20px;
+}
+
+.feature h2 {
+  color: white;
+}
+
+/* Create two columns/boxes that float next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: black;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; /* Center align the navigation items */
+}
+
+nav li {
+  margin: 10px 0;
+}
+
+/* Add border style to navigation links */
+.nav-item a {
+  border: 2px solid white;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: black;
+  height: 300px;
+}
+
+/* Clear floats after the columns */
+#features::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  clear: both; /* Added to clear floats */
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Added style for colorful bold words */
+.highlight-red {
+  color: #FF6B6B;
+  font-weight: bold;
+}
+.highlight-blue {
+  color: #60A0A6;
+  font-weight: bold;
+}
+.highlight-yellow {
+  color: #FFCC5C;
+  font-weight: bold;
+}
+
+/* Center align the heading and text */
+#center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h2><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.9Vue5HNbXUW1bh-mrcMV8AHaEK%26pid%3DApi&f=1&ipt=c9288cf54185fec0e68d0860bd3b3d27e431fb7a30de873338cd35e5756de42b&ipo=images" alt="Pokemon" width="500" height="300"></h2>
+
+<div class="nav-container">
+    <nav>
+        <ul>
+            <li class="nav-item">
+                <a class="highlight-yellow" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="highlight-green" href="introduction.html">Introduction about Pokémon</a>
+            </li>
+            <li class="nav-item">
+                <a class="highlight-red" href="typesofpokemon.html">Type Of Pokemon</a>
+            </li>
+            <li class="nav-item">
+                <a class="highlight-blue" href="listofpokemon.html">List Of Pokemon</a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<article>
+  <div id="center-content">
+    <h1> What Is <span class="highlight-red">Pokémon</span></h1>
+    <p><strong><span class="highlight-red">Pokémon</span></strong>, derived from the term <em><span class="highlight-blue">Pocket Monsters</span></em>, stands as a cultural phenomenon that originated in Japan, capturing hearts and imaginations worldwide. Conceived by Satoshi Tajiri and Ken Sugimori, the franchise was introduced by Nintendo, Game Freak, and Creatures in 1996, forever changing the landscape of entertainment.</p>
+  </div>
+</article>
+
+<footer style="background-color:Black;">
+  <p>copyright@ans@hsbm</p>
+</footer>
+
+</body>
+</html>
